@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="my-4">Create Post</h1>
+<form method="POST" class="form">
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input
+      type="text"
+      name="title"
+      id="title"
+      class="form-control"
+      placeholder="Enter post title"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="content" class="form-label">Content</label>
+    <textarea
+      name="content"
+      id="content"
+      class="form-control"
+      rows="5"
+      placeholder="Enter post content"
+      required
+    ></textarea>
+  </div>
+  <button type="submit" class="btn btn-success">Create</button>
+</form>
+{% endblock %}
